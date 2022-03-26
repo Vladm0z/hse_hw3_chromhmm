@@ -38,7 +38,7 @@ A549 | H3K27me3 | H3K27me3.bam | Control.bam
 
 Emission | Overlap | Transition 
  --- | --- | ---
-![Image](/data/emissions_15.png) | ![Image](/data/Huvec_15_overlap.png) | ![Image](/data/transitions_15.png)
+![Image](/data/emissions_15.png) | ![Image](/data/A549_15_overlap.png) | ![Image](/data/transitions_15.png)
 
 RefSeqTSS | RefSeqTES 
  --- | --- 
