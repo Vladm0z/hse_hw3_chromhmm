@@ -62,3 +62,36 @@ RefSeqTSS | RefSeqTES
 13 | Repressed | <ul><li> Чаще всего находятся на ядерной ламине, то есть попадает на участок репрессированного гетерохроматима </li><li> Не попадает на ген </li> | ![Image](/data/state_13.png)
 14 | Heterochromatin | <ul><li> выражен в H3K27me3 </li><li> Чаще всего находятся на ядерной ламине, то есть попадает на участок репрессированного гетерохроматима </li><li> Не попадает на ген </li> | ![Image](/data/state_14.png)
 15 | Heterochromatin | <ul><li> выражен в H3K9me3 </li><li> Чаще всего находятся на ядерной ламине, то есть попадает на участок репрессированного гетерохроматима </li><li> Не попадает на ген </li> | ![Image](/data/state_15.png)
+
+ 
+ ## Бонус
+ ```
+ from google.colab import files
+import os
+
+states = ['Active_Promoter',
+          'Weak_Enhancer',
+          'Strong_Enhancer',
+          'Active_Promoter',
+          'Active_Promoter',
+          'Weak_Enhancer',
+          'Weak_Enhancer',
+          'Weak_Enhancer',
+          'Weak_Enhancer',
+          'Weak_Transcribed',
+          'Weak_Transcribed',
+          'Weak_Transcribed',
+          'Repressed',
+          'Heterochromatin',
+          'Heterochromatin']
+
+with open(f'data/A549_15_dense.bed', 'r') as old_f:
+  with open(f'A549_15_dense_new.bed', 'a') as new_f:
+    lines = old_f.readlines()
+    new_f.write(lines[0])
+    for line in lines[1:]:
+        l = line.split('\t')
+        l[3] = l[3] + '_' + states[int(l[3]) - 1]
+        new_f.write('\t'.join(l))
+ ```
+ 
