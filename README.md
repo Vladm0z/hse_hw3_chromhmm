@@ -95,3 +95,4 @@ with open(f'data/A549_15_dense.bed', 'r') as old_f:
         new_f.write('\t'.join(l))
  ```
  
+[Итог](https://github.com/Vladm0z/hse_hw3_chromhmm/blob/main/data/A549_15_dense_new.rar) - архив, так как в несжатом виде файл большой
