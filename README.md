@@ -47,7 +47,7 @@ RefSeqTSS | RefSeqTES
 ## Эпигенетические типы
 № | Название | Описание | Картинка
  --- | --- | ---| ---
-1 | Active Promoter | <ul><li> выражен в H3K27me3, H3K4me3, H3K4me2 <ul><li> Попадает на интрон или экзон | ![Image](/data/state_1.png)
+1 | Active Promoter | <ul> выражен в H3K27me3, H3K4me3, H3K4me2 <ul> Попадает на интрон или экзон | ![Image](/data/state_1.png)
 2 | Weak enhancer/Weak transcribed | <ul><li> выражен в H3K4me2, H3K4me1 <ul><li> Чаще всего находятся на RefSeqTES, RefSeqGene, а также на ядерной ламине <ul><li> Попадает на интрон | ![Image](/data/state_2.png)
 3 | Strong enhancer/Transcriptional elogation | <ul><li> выражен в H3K9ac, H3K27ac, H3K4me3, H3K4me2, H3K4me1 <ul><li> Чаще всего находятся на RefSeqTES и RefSeqTSS2Kb, а также на ядерной ламине <ul><li> Попадает на интрон | ![Image](/data/state_3.png)
 4 | Active Promoter | <ul><li> выражен в H3K9ac, H3K27ac, H3K4me3, H3K4me2 <ul><li> Чаще всего находятся на CpGIslands, RefSeqTES, RefSeqExon и RefSeqTSS2Kb <ul><li> Попадает на интрон или экзон | ![Image](/data/state_4.png)
